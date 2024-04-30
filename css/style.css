@@ -1,0 +1,289 @@
+@charset "UTF-8"
+
+/*MObile First*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1:#30c39e;
+    --cor2:#0a8ea0;
+
+    --font1:'sans-serif';
+    --font2:'FontAwesome';
+    --font3:'fontawesome-webfont';
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: white;
+}
+
+header {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 30px 30px 70px 30px;
+}
+
+header > h2 {
+    color: var(--cor1);
+    font-size: 2em;
+    font-weight: bolder;
+   padding: 21px 5px 50px 50px ;
+}
+
+
+
+header >div#first  {
+    padding: 10px 40px 10px 40px;
+}
+
+
+header > span {
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--cor1);
+    padding: 10px;
+    position: absolute;
+    right: 5%;
+    top: 17%;
+    cursor: pointer;
+
+}
+
+header > span:hover {
+    color: black;
+    background-color: white;
+    transition: .7s;
+}
+
+menu {
+    display: none;
+    position: absolute;
+    right: 13%;
+    top: 13%;
+    padding: 0px;
+    margin: 0px;
+}
+
+header > menu > ul {
+    list-style-type: none;
+}
+
+header > menu > ul > li  {
+    display: inline-block;
+    margin: 20px;
+
+}
+
+a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor1) ;
+    
+}
+
+section {
+    color: white;
+    padding: 30px;
+    text-align: justify;
+}
+section h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+section#sobre {
+    color: black;
+
+}
+
+div#second {
+    padding: 10px 40px 10px 40px;
+}
+
+
+
+
+section#servic {
+    background-color: var(--cor1) ;
+    position: relative;
+
+}
+
+section#servic h3 {
+    padding: 0px 40px;
+}
+
+
+section#servic > #father {
+    padding: 2px 40px 2px 40px;
+}
+
+section#servic > div#colunas {
+    padding: 2px 40px 2px 40px;
+  
+}
+
+section#contact {
+    color: black;
+
+
+}
+
+fieldset {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 10px 50px 10px;
+
+    
+    position: relative;
+    right: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.158);
+}
+fieldset h3 {
+    text-align: center;    
+
+}
+
+form {
+    color: black;
+    font-weight: bold;
+
+}
+
+form > label {
+    display: flexbox;
+
+}
+form input, textarea {
+    background-color: rgba(211, 211, 211, 0.384);
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 15px 5px 5px;
+}
+form input.submit {
+    background-color: var(--cor2);
+    color: white;
+    position: absolute;
+    right: 7%;
+    bottom: 1%;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+
+    
+}
+
+form input.submit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.589);
+
+}
+
+
+
+footer {
+     background-color: rgba(0, 0, 0, 0.829);
+    padding: 50px;
+
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+
+/*--------------------Media Query DeskTop------------------*/
+
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 2% 10%;
+    }
+
+    header >h2, header > ul {
+        padding: 2% 10%;
+        width:40%;
+    }
+    
+    menu {
+        display: block;
+        display: flexbox
+        ;
+        flex-direction: row;
+        position: absolute;
+        right: 5%;
+        top: 13%;
+
+    }
+
+    span {
+        display: none;
+    }
+
+    header > div#first {
+        margin: 20px;
+
+        display: block;
+        width: 70%;
+
+    }
+
+    section {
+        padding: 2% 10%;
+    }
+
+
+    section#servic > div#father {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        
+    }
+    div#colunas {
+        flex: 1 1 200px;
+        
+    }
+
+    form {
+        align-items: center;
+        max-width: 60%;
+        height: 4;
+        margin: auto;
+
+    }
+
+    form input, textarea {
+    padding: 5px 3px 5px 6px;
+    margin-left: 30px;
+    width: 35%;
+   
+
+
+    }
+    input#enviar {
+        width: 17%;
+        
+    }
+
+    label {
+        font-size: 1.2em;
+    }
+
+
+
+
+
+}
